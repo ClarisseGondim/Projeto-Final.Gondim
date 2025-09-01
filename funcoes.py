@@ -16,7 +16,7 @@ def cadastrar_aluno(alunos, matricula, nome):
 
 def cadastrar_disciplina(disciplinas, codigo, nome):
     """
-    Adicionar uma nova disciplina e verificar se o código.
+    Adicionar uma nova disciplina e verificar o código.
     """
     if codigo in disciplinas:
         print("Erro: Código da disciplina já existe.")
@@ -216,4 +216,5 @@ def excluir_disciplina(disciplinas, alunos, codigo):
                     del alunos[matricula_aluno]['notas'][codigo]
         
         del disciplinas[codigo]
+
         print(f"Disciplina com código '{codigo}' e todas as suas matrículas removidas.")
